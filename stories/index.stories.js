@@ -25,11 +25,17 @@ storiesOf('Modal', module)
             </Button>
             <Modal
               isModal={store.state.isModal}
-              ModalBody={ModalBody}
               handleCloseModal={() =>
                 store.set({isModal: !store.state.isModal})
               }
-            />
+              title="タイトルです"
+              actionMessage="を何とかしますか？を何とかしますか？を何とかしますか？を何とかしますか？を何とかしますか？を何とかしますか？を何とかしますか？を何とかしますか？を何とかしますか？"
+              resource="じぇむお"
+              isShowYesButton
+              isShowCancelButton
+            >
+              はろ〜
+            </Modal>
           </div>
         );
       }),
